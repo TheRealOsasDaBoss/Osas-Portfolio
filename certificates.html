@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Certificates | Eromonsele O.I.</title>
+    <title>About Me | Eromonsele O.I.</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
@@ -19,12 +19,12 @@
             </a>
             <div class="hidden lg:flex items-center gap-6">
                 <a class="text-sm text-white/70 hover:text-white transition-colors" href="home.html">Home</a>
-                <a class="text-sm text-white/70 hover:text-white transition-colors" href="about.html">About</a>
+                <a class="text-sm text-white hover:text-white transition-colors border-b-2 border-[#adc6ff] pb-1" href="about.html">About</a>
                 <a class="text-sm text-white/70 hover:text-white transition-colors" href="projects.html">Projects</a>
                 <a class="text-sm text-white/70 hover:text-white transition-colors" href="skills.html">Skills</a>
                 <a class="text-sm text-white/70 hover:text-white transition-colors" href="services.html">Services</a>
                 <a class="text-sm text-white/70 hover:text-white transition-colors" href="resume.html">Resume</a>
-                <a class="text-sm text-white hover:text-white transition-colors border-b-2 border-[#adc6ff] pb-1" href="certificates.html">Certificates</a>
+                <a class="text-sm text-white/70 hover:text-white transition-colors" href="certificates.html">Certificates</a>
                 <a class="text-sm text-white/70 hover:text-white transition-colors" href="blog.html">Blog</a>
                 <a class="text-sm text-white/70 hover:text-white transition-colors" href="my%20journey.html">Journey</a>
                 <a class="text-sm text-white/70 hover:text-white transition-colors" href="contact.html">Contact</a>
@@ -33,12 +33,12 @@
         </nav>
         <div id="mobile-menu" class="hidden lg:hidden absolute top-20 left-0 w-full bg-[#10131a] border-b border-white/10 p-6 flex flex-col gap-4 shadow-2xl">
             <a class="text-sm text-white/70" href="home.html">Home</a>
-            <a class="text-sm text-white/70" href="about.html">About</a>
+            <a class="text-sm text-white hover:text-blue-500" href="about.html">About</a>
             <a class="text-sm text-white/70" href="projects.html">Projects</a>
             <a class="text-sm text-white/70" href="skills.html">Skills</a>
             <a class="text-sm text-white/70" href="services.html">Services</a>
             <a class="text-sm text-white/70" href="resume.html">Resume</a>
-            <a class="text-sm text-white hover:text-blue-500" href="certificates.html">Certificates</a>
+            <a class="text-sm text-white/70" href="certificates.html">Certificates</a>
             <a class="text-sm text-white/70" href="blog.html">Blog</a>
             <a class="text-sm text-white/70" href="my%20journey.html">Journey</a>
             <a class="text-sm text-white/70" href="contact.html">Contact</a>
@@ -46,149 +46,57 @@
     </header>
 
     <main class="pt-40 pb-24 px-6 lg:px-10 max-w-[1240px] mx-auto relative">
-        <div class="absolute top-0 right-0 -z-10 opacity-20 blur-[100px] pointer-events-none">
+        <div class="absolute top-0 left-0 -z-10 opacity-20 blur-[100px] pointer-events-none">
             <div class="bg-blue-600 w-[400px] h-[400px] rounded-full"></div>
         </div>
 
-        <!-- Headline & Intro Grid -->
-        <section class="mb-20 grid lg:grid-cols-3 gap-12 items-center">
-            <div class="lg:col-span-2">
+        <!-- About Hero Section with Profile Image Grid -->
+        <section class="mb-24 grid lg:grid-cols-12 gap-12 items-center">
+            <!-- Left Side Text Context -->
+            <div class="lg:col-span-7">
                 <div class="flex items-center gap-3 mb-4">
                     <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
-                    <span class="text-xs font-bold text-blue-500 uppercase tracking-widest">Achievements</span>
+                    <span class="text-xs font-bold text-blue-500 uppercase tracking-widest">Biography</span>
                 </div>
                 <h1 class="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-                    Validated <span class="text-blue-500">Mastery</span> and Technical Growth.
+                    Driven by <span class="text-blue-500">Logic</span>, Defined by Code.
                 </h1>
-                <p class="text-lg text-white/60 max-w-xl">
-                    A curated gallery of my professional certifications and technical milestones achieved through rigorous assessment and continuous learning.
+                <p class="text-lg text-white/70 mb-6 leading-relaxed">
+                    Hello! I'm Eromonsele, a software developer deeply committed to creating highly responsive web experiences and architecting efficient engineering backends.
+                </p>
+                <p class="text-base text-white/50 leading-relaxed">
+                    My approach bridges the gap between clean aesthetics and rigorous programming standards. I thrive on solving complex computational challenges and translating them into dynamic user interfaces.
                 </p>
             </div>
             
-            <!-- Certificate Showcase Preview Card -->
-            <div class="flex justify-center lg:justify-end">
-                <div class="relative group w-full max-w-[320px] aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 shadow-2xl transition-all duration-500 hover:border-blue-500/30">
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#0b0d12] via-transparent to-transparent opacity-40 z-10"></div>
-                    <img alt="Featured Certificate Preview" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="cert.jpg"/>
+            <!-- Right Side Profile Picture Container -->
+            <div class="lg:col-span-5 flex justify-center lg:justify-end">
+                <div class="relative group w-full max-w-[360px] aspect-[4/5] rounded-3xl overflow-hidden border border-white/10 shadow-2xl transition-all duration-500 hover:border-blue-500/30">
+                    <!-- Subtle Dark Overlay for Depth -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0b0d12]/80 via-transparent to-transparent opacity-40 z-10"></div>
+                    <img alt="Eromonsele O.I. Profile" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="me.jpg"/>
                 </div>
             </div>
         </section>
 
-        <!-- Featured Prominent Card Section -->
-        <section class="mb-20">
-            <div class="glass-card bg-white/5 border border-white/10 p-8 lg:p-12 rounded-3xl grid md:grid-cols-2 gap-12 items-center relative overflow-hidden group">
-                <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div class="relative z-10">
-                    <div class="flex items-center gap-4 mb-6">
-                        <span class="px-4 py-1.5 bg-blue-500/10 text-blue-500 rounded-full text-xs font-bold border border-blue-500/20">PROMINENT</span>
-                        <span class="text-white/40 text-xs font-bold uppercase tracking-widest">FreeCodeCamp</span>
-                    </div>
-                    <h2 class="text-3xl font-bold text-white mb-4">Responsive Web Design</h2>
-                    <p class="text-white/60 mb-8 leading-relaxed">
-                        Comprehensive mastery of HTML5, CSS3, Flexbox, and CSS Grid. Validates the ability to build modern, accessible, and responsive web experiences from the ground up.
-                    </p>
-                    <div class="flex items-center gap-6 text-sm text-white/40">
-                        <div class="flex items-center gap-2">
-                            <span class="material-symbols-outlined text-lg">calendar_today</span>
-                            <span>January 2024</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <span class="material-symbols-outlined text-lg">verified</span>
-                            <span>Verified Identity</span>
-                        </div>
-                    </div>
-                    <a href="#" class="mt-10 px-8 py-4 bg-blue-600 text-white font-bold rounded-xl flex items-center justify-center gap-2 hover:bg-blue-700 active:scale-95 transition-all shadow-lg shadow-blue-600/20 w-fit">
-                        <span>View Certificate</span>
-                        <span class="material-symbols-outlined text-lg">open_in_new</span>
-                    </a>
-                </div>
-                <div class="relative rounded-2xl overflow-hidden border border-white/5 group-hover:border-blue-500/30 transition-colors shadow-2xl">
-                    <img alt="FreeCodeCamp Responsive Web Design Certificate Preview" class="w-full h-full object-cover" src="cert.jpg"/>
-                </div>
+        <!-- Core Core Strengths / Overview Grid -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass-card bg-white/5 border border-white/10 p-8 rounded-2xl">
+                <span class="material-symbols-outlined text-blue-500 text-3xl mb-4">code</span>
+                <h3 class="text-xl font-bold text-white mb-2">Clean Architecture</h3>
+                <p class="text-white/50 text-sm leading-relaxed">Writing scalable, easily maintainable, and deeply human-readable source code across every stack layer.</p>
+            </div>
+            <div class="glass-card bg-white/5 border border-white/10 p-8 rounded-2xl">
+                <span class="material-symbols-outlined text-blue-500 text-3xl mb-4">speed</span>
+                <h3 class="text-xl font-bold text-white mb-2">Performance Optimization</h3>
+                <p class="text-white/50 text-sm leading-relaxed">Fine-tuning assets, managing complex UI structures, and achieving flawless rendering pipelines.</p>
+            </div>
+            <div class="glass-card bg-white/5 border border-white/10 p-8 rounded-2xl">
+                <span class="material-symbols-outlined text-blue-500 text-3xl mb-4">school</span>
+                <h3 class="text-xl font-bold text-white mb-2">Adaptive Mindset</h3>
+                <p class="text-white/50 text-sm leading-relaxed">Consistently testing new paradigms, learning patterns, and staying aligned with industry breakthroughs.</p>
             </div>
         </section>
-
-        <!-- Certificate Grid Items Section -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="glass-card bg-white/5 border border-white/10 p-6 rounded-2xl flex flex-col h-full group">
-                <div class="aspect-video mb-6 rounded-xl overflow-hidden bg-[#1d2027] border border-white/5 relative">
-                    <img alt="Backend Specialist Certificate" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7wdOnoeIxOwS1ZrT0FSrJIRmpF4BVBENjP5bsrfK3GBNsG7nOjUtcYwYmSKMBcFKjE-zvzElOxrjRrmrDhWhrvznf1_q--54YRHmpMQwRTpm7HQV_xDbeUzsJJv9JvwbkNWf6DswchesAVWp-5g4mseCIhji-NVEavqR1ur_n-5eCcjf4Z-_tHTDvXMHrHogxSm5SJDpeomCtpFIoRPUBOrH2b1K8zS9-2rSds34cEpJTbj8ZKkUs__e4bF8JuVar2EomzNjG7iBO"/>
-                </div>
-                <h3 class="text-xl font-bold text-white mb-4">Scientific Computing with Python</h3>
-                <div class="flex justify-between items-end mt-auto">
-                    <div>
-                        <p class="text-xs font-bold text-blue-500 uppercase tracking-widest mb-1">FreeCodeCamp</p>
-                        <p class="text-xs text-white/40">Nov 2023</p>
-                    </div>
-                    <span class="material-symbols-outlined text-white/40 hover:text-blue-500 transition-colors cursor-pointer">link</span>
-                </div>
-            </div>
-
-            <div class="glass-card bg-white/5 border border-white/10 p-6 rounded-2xl flex flex-col h-full group">
-                <div class="aspect-video mb-6 rounded-xl overflow-hidden bg-[#1d2027] border border-white/5 relative">
-                    <img alt="Algorithm and Data Structures Certificate" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEn3wfU_QYGjKxlwFtYy_bfgROshgLl-_BoUmfmRZihBSFzF5XvpuSygYjchqYP1NNEDrQYv0J8cqgawgwV8OfoeAPNESoZyWHNBFWWia4-h9Cb6yqQVm-1YQy95yWWPndJIfBYVZyu-PMJHLQ_7_aZpSADeeul1N6qffqmWR-bkusNaCj-qmYvgt2RmKa5T2NAyiCFc3bn384iqAxUlZAYqPrVdIfkm5_YaHCEi7jUArrtaZcge8IizK7Y0qmZAGUwC3nAprbPxHJ"/>
-                </div>
-                <h3 class="text-xl font-bold text-white mb-4">JavaScript Algorithms</h3>
-                <div class="flex justify-between items-end mt-auto">
-                    <div>
-                        <p class="text-xs font-bold text-blue-500 uppercase tracking-widest mb-1">HackerRank</p>
-                        <p class="text-xs text-white/40">Aug 2023</p>
-                    </div>
-                    <span class="material-symbols-outlined text-white/40 hover:text-blue-500 transition-colors cursor-pointer">link</span>
-                </div>
-            </div>
-
-            <div class="glass-card bg-white/5 border border-white/10 p-6 rounded-2xl flex flex-col h-full group">
-                <div class="aspect-video mb-6 rounded-xl overflow-hidden bg-[#1d2027] border border-white/5 relative">
-                    <img alt="Cloud Engineering Certificate" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc0jGTF5nprjskeu0IQrEV38utziwxSs0kPtAQbLLYIL8ySCXhCeBDFkvoGRNwfiyqu6GxPIt-vswThR4_UZmqyCl-af4gm_LVELsIlXLY3ZO3l78m13YppefFf-WhojV181Lq0LlCHgftm7Syu2lSbQi9ynPA2lPg8sSu4Q9htcdq8Nk3Q_y5EHadlc86Fl3gOIHvykxDQXW4S2iZX84qEkuZW1Tir-LjlJ4xTT9cydZun6eH791XfWSACKDEcChCM6KM6wfCqdU6"/>
-                </div>
-                <h3 class="text-xl font-bold text-white mb-4">Google Cloud Essentials</h3>
-                <div class="flex justify-between items-end mt-auto">
-                    <div>
-                        <p class="text-xs font-bold text-blue-500 uppercase tracking-widest mb-1">Google Cloud</p>
-                        <p class="text-xs text-white/40">Jun 2023</p>
-                    </div>
-                    <span class="material-symbols-outlined text-white/40 hover:text-blue-500 transition-colors cursor-pointer">link</span>
-                </div>
-            </div>
-
-            <div class="glass-card bg-white/5 border border-white/10 p-6 rounded-2xl flex flex-col h-full group">
-                <div class="aspect-video mb-6 rounded-xl overflow-hidden bg-[#1d2027] border border-white/5 flex items-center justify-center">
-                    <div class="w-16 h-16 rounded-full bg-blue-600/10 flex items-center justify-center text-blue-500">
-                        <span class="material-symbols-outlined text-4xl">terminal</span>
-                    </div>
-                </div>
-                <h3 class="text-xl font-bold text-white mb-4">Advanced React Patterns</h3>
-                <div class="flex justify-between items-end mt-auto">
-                    <div>
-                        <p class="text-xs font-bold text-blue-500 uppercase tracking-widest mb-1">Meta Specialization</p>
-                        <p class="text-xs text-white/40">Dec 2022</p>
-                    </div>
-                    <span class="material-symbols-outlined text-white/40 hover:text-blue-500 transition-colors cursor-pointer">link</span>
-                </div>
-            </div>
-
-            <div class="glass-card bg-white/5 border border-white/10 p-6 rounded-2xl flex flex-col h-full group">
-                <div class="aspect-video mb-6 rounded-xl overflow-hidden bg-[#1d2027] border border-white/5 flex items-center justify-center">
-                    <div class="w-16 h-16 rounded-full bg-blue-600/10 flex items-center justify-center text-blue-500">
-                        <span class="material-symbols-outlined text-4xl">security</span>
-                    </div>
-                </div>
-                <h3 class="text-xl font-bold text-white mb-4">Cybersecurity Fundamentals</h3>
-                <div class="flex justify-between items-end mt-auto">
-                    <div>
-                        <p class="text-xs font-bold text-blue-500 uppercase tracking-widest mb-1">Cisco Academy</p>
-                        <p class="text-xs text-white/40">Oct 2022</p>
-                    </div>
-                    <span class="material-symbols-outlined text-white/40 hover:text-blue-500 transition-colors cursor-pointer">link</span>
-                </div>
-            </div>
-
-            <div class="border border-dashed border-white/10 rounded-2xl flex flex-col items-center justify-center p-8 opacity-40 group hover:opacity-100 transition-opacity duration-300">
-                <span class="material-symbols-outlined text-4xl mb-4 text-blue-500">history_edu</span>
-                <p class="text-white font-bold text-center">More certifications in progress...</p>
-            </div>
-        </div>
     </main>
 
     <footer class="relative mt-24 border-t border-white/10 py-12 bg-[#0b0d12] overflow-hidden">
